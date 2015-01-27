@@ -18,6 +18,9 @@ DELETE THIS WHEN YOU DO THIS
 
 ## Instructions
 
+- Mirror CRUD functionality -> Create, Read, Update, Delete
+
+
 ## Advanced
 
 ## Hints

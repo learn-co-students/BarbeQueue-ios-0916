@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2B2B6B574CC7BBD5D7C732BA /* libPods-unit_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 535EAFB5205AE00DC03A0036 /* libPods-unit_tests.a */; };
 		611B84C9A69E4B7794A29359 /* FISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FAEB7E0AF24740AADAECB9 /* FISAppDelegate.m */; };
+		722C53821A771EC30069A9D2 /* FISControlPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722C53811A771EC30069A9D2 /* FISControlPanelViewController.m */; };
+		722C53851A771F5E0069A9D2 /* FISControlPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 722C53841A771F5E0069A9D2 /* FISControlPanelView.m */; };
 		7309CB8FD21B45F3B459A1F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C3F9D642324563A2DBB079 /* main.m */; };
 		FCF28161460F4F409B892CCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5E4F3BC9F647F28DCF31A3 /* Foundation.framework */; };
 		FE736CA646B2412AB3F84551 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31E2CA48F7B146488339E64D /* Images.xcassets */; };
@@ -29,6 +31,10 @@
 		3B159CAE9B2D4FE4B2562D5E /* UnitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		535EAFB5205AE00DC03A0036 /* libPods-unit_tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-unit_tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AD1D98FC9F14A9CB668C5BB /* BarbeQueue-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BarbeQueue-Prefix.pch"; sourceTree = "<group>"; };
+		722C53801A771EC30069A9D2 /* FISControlPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISControlPanelViewController.h; sourceTree = "<group>"; };
+		722C53811A771EC30069A9D2 /* FISControlPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISControlPanelViewController.m; sourceTree = "<group>"; };
+		722C53831A771F5E0069A9D2 /* FISControlPanelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISControlPanelView.h; sourceTree = "<group>"; };
+		722C53841A771F5E0069A9D2 /* FISControlPanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISControlPanelView.m; sourceTree = "<group>"; };
 		74DDA26D08484A8BA3740E28 /* BarbeQueue-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BarbeQueue-Info.plist"; sourceTree = "<group>"; };
 		97E5B87B963546BBBF7E7A96 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		ADD090D214F64914B3C19534 /* BarbeQueue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarbeQueue.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +125,10 @@
 			children = (
 				BF9F87A08BB74F10AA17F5ED /* FISAppDelegate.h */,
 				F1FAEB7E0AF24740AADAECB9 /* FISAppDelegate.m */,
+				722C53801A771EC30069A9D2 /* FISControlPanelViewController.h */,
+				722C53811A771EC30069A9D2 /* FISControlPanelViewController.m */,
+				722C53831A771F5E0069A9D2 /* FISControlPanelView.h */,
+				722C53841A771F5E0069A9D2 /* FISControlPanelView.m */,
 				8F577F80EDE84984A7966CB4 /* Resources */,
 			);
 			path = BarbeQueue;
@@ -304,6 +314,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				611B84C9A69E4B7794A29359 /* FISAppDelegate.m in Sources */,
+				722C53821A771EC30069A9D2 /* FISControlPanelViewController.m in Sources */,
+				722C53851A771F5E0069A9D2 /* FISControlPanelView.m in Sources */,
 				7309CB8FD21B45F3B459A1F8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

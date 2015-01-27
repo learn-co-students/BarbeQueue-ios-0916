@@ -7,13 +7,24 @@
 //
 
 #import "FISAppDelegate.h"
+
+#import "FISControlPanelViewController.h"
 @interface FISAppDelegate ()
 
 @end
 @implementation FISAppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window.rootViewController = [[FISControlPanelViewController alloc] init];
     return YES;
+}
+
+- (UIWindow *)window {
+    if (!_window) {
+        _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        [_window makeKeyAndVisible];
+    }
+    return _window;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
