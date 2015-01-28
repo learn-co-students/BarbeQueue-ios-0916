@@ -11,6 +11,7 @@
 		611B84C9A69E4B7794A29359 /* FISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FAEB7E0AF24740AADAECB9 /* FISAppDelegate.m */; };
 		722C53821A771EC30069A9D2 /* FISControlPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722C53811A771EC30069A9D2 /* FISControlPanelViewController.m */; };
 		722C53851A771F5E0069A9D2 /* FISControlPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 722C53841A771F5E0069A9D2 /* FISControlPanelView.m */; };
+		72BD4EE31A7846440086AD11 /* FISNewItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BD4EE21A7846440086AD11 /* FISNewItemTableViewCell.m */; };
 		7309CB8FD21B45F3B459A1F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C3F9D642324563A2DBB079 /* main.m */; };
 		FCF28161460F4F409B892CCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5E4F3BC9F647F28DCF31A3 /* Foundation.framework */; };
 		FE736CA646B2412AB3F84551 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31E2CA48F7B146488339E64D /* Images.xcassets */; };
@@ -35,6 +36,8 @@
 		722C53811A771EC30069A9D2 /* FISControlPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISControlPanelViewController.m; sourceTree = "<group>"; };
 		722C53831A771F5E0069A9D2 /* FISControlPanelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISControlPanelView.h; sourceTree = "<group>"; };
 		722C53841A771F5E0069A9D2 /* FISControlPanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISControlPanelView.m; sourceTree = "<group>"; };
+		72BD4EE11A7846440086AD11 /* FISNewItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISNewItemTableViewCell.h; sourceTree = "<group>"; };
+		72BD4EE21A7846440086AD11 /* FISNewItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISNewItemTableViewCell.m; sourceTree = "<group>"; };
 		74DDA26D08484A8BA3740E28 /* BarbeQueue-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BarbeQueue-Info.plist"; sourceTree = "<group>"; };
 		97E5B87B963546BBBF7E7A96 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		ADD090D214F64914B3C19534 /* BarbeQueue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarbeQueue.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +132,8 @@
 				722C53811A771EC30069A9D2 /* FISControlPanelViewController.m */,
 				722C53831A771F5E0069A9D2 /* FISControlPanelView.h */,
 				722C53841A771F5E0069A9D2 /* FISControlPanelView.m */,
+				72BD4EE11A7846440086AD11 /* FISNewItemTableViewCell.h */,
+				72BD4EE21A7846440086AD11 /* FISNewItemTableViewCell.m */,
 				8F577F80EDE84984A7966CB4 /* Resources */,
 			);
 			path = BarbeQueue;
@@ -313,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72BD4EE31A7846440086AD11 /* FISNewItemTableViewCell.m in Sources */,
 				611B84C9A69E4B7794A29359 /* FISAppDelegate.m in Sources */,
 				722C53821A771EC30069A9D2 /* FISControlPanelViewController.m in Sources */,
 				722C53851A771F5E0069A9D2 /* FISControlPanelView.m in Sources */,

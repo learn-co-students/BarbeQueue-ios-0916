@@ -10,4 +10,6 @@
 
 @interface FISControlPanelView : UIView
 
+@property (nonatomic, weak, readonly) UITableView *tableView;
+
 @end

@@ -8,6 +8,9 @@
 
 #import "FISControlPanelView.h"
 
+@interface FISControlPanelView ()
+@property (nonatomic, weak,readwrite) UITableView *tableView;
+@end
 @implementation FISControlPanelView
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -19,30 +22,19 @@
 }
 
 - (void)setUpViews {
-    self.translatesAutoresizingMaskIntoConstraints = NO;
-    
-    UILabel *createSessionLabel = [[UILabel alloc] init];
-    createSessionLabel.backgroundColor = [UIColor yellowColor];
-    createSessionLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    createSessionLabel.text = @"No Session";
-    [self addSubview:createSessionLabel];
-    
-    
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:createSessionLabel attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0]];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:createSessionLabel attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterY multiplier:0.5 constant:0]];
-    
-    
-    UIButton *createSessionButton = [[UIButton alloc] init];
-    [createSessionButton setTitle:@"Create Session" forState:UIControlStateNormal];
-    createSessionButton.translatesAutoresizingMaskIntoConstraints = NO;
-    [createSessionButton setBackgroundColor:[UIColor darkGrayColor]];
-    [self addSubview:createSessionButton];
-    
-    NSDictionary *views = NSDictionaryOfVariableBindings(createSessionLabel, createSessionButton);
-    
-//    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[createSessionButton(>=createSessionLabel)]" options:NSLayoutFormatAlignAllCenterX metrics:nil views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[createSessionLabel]-[createSessionButton]" options:0 metrics:nil views:views]];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:createSessionButton attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:createSessionLabel attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0]];
+    NSDictionary *views = @{@"tableView": self.tableView} ;
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[tableView]|" options:0 metrics:nil views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[tableView]|" options:0 metrics:nil views:views]];
+}
+
+- (UITableView *)tableView {
+    if (!_tableView) {
+        UITableView *tableView = [[UITableView alloc] init];
+        [self addSubview:tableView];
+        _tableView = tableView;
+        _tableView.translatesAutoresizingMaskIntoConstraints = NO;
+    }
+    return _tableView;
 }
 
 @end
