@@ -59,6 +59,11 @@
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {
+    if ([textField.text isEqualToString:@""]) {
+        [self.stuff removeObjectAtIndex:0];
+        [self.view.tableView deleteRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationBottom];
+        return;
+    }
     [self.stuff replaceObjectAtIndex:0 withObject:textField.text];
     [self.view.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationLeft];
     [self.view.tableView removeGestureRecognizer:self.tapGestureRecognizer];
@@ -95,6 +100,7 @@
             addCell = [[FISNewItemTableViewCell alloc] init];
         }
         addCell.nameField.delegate = self;
+        [addCell.nameField becomeFirstResponder];
         cell = addCell;
     } else {
         cell = [tableView dequeueReusableCellWithIdentifier:basicCellIdentifier];
