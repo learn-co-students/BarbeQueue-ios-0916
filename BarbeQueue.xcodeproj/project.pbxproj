@@ -17,6 +17,7 @@
 		72BD4EFB1A7AB6600086AD11 /* FISRequestQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BD4EFA1A7AB6600086AD11 /* FISRequestQueue.m */; };
 		72BD4EFD1A7AB67D0086AD11 /* FISAPIClientSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BD4EFC1A7AB67D0086AD11 /* FISAPIClientSpec.m */; };
 		72BD4EFF1A7AB68E0086AD11 /* FISRequestQueueSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BD4EFE1A7AB68E0086AD11 /* FISRequestQueueSpec.m */; };
+		72BD4F021A7AE4C60086AD11 /* FISIngredient.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BD4F011A7AE4C60086AD11 /* FISIngredient.m */; };
 		7309CB8FD21B45F3B459A1F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C3F9D642324563A2DBB079 /* main.m */; };
 		FCF28161460F4F409B892CCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5E4F3BC9F647F28DCF31A3 /* Foundation.framework */; };
 		FE736CA646B2412AB3F84551 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31E2CA48F7B146488339E64D /* Images.xcassets */; };
@@ -50,6 +51,8 @@
 		72BD4EFA1A7AB6600086AD11 /* FISRequestQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISRequestQueue.m; sourceTree = "<group>"; };
 		72BD4EFC1A7AB67D0086AD11 /* FISAPIClientSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISAPIClientSpec.m; sourceTree = "<group>"; };
 		72BD4EFE1A7AB68E0086AD11 /* FISRequestQueueSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISRequestQueueSpec.m; sourceTree = "<group>"; };
+		72BD4F001A7AE4C60086AD11 /* FISIngredient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISIngredient.h; sourceTree = "<group>"; };
+		72BD4F011A7AE4C60086AD11 /* FISIngredient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISIngredient.m; sourceTree = "<group>"; };
 		74DDA26D08484A8BA3740E28 /* BarbeQueue-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BarbeQueue-Info.plist"; sourceTree = "<group>"; };
 		97E5B87B963546BBBF7E7A96 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		ADD090D214F64914B3C19534 /* BarbeQueue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarbeQueue.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +128,8 @@
 			children = (
 				72BD4EF21A7AB6160086AD11 /* FISAPIClient.h */,
 				72BD4EF31A7AB6160086AD11 /* FISAPIClient.m */,
+				72BD4F001A7AE4C60086AD11 /* FISIngredient.h */,
+				72BD4F011A7AE4C60086AD11 /* FISIngredient.m */,
 				72BD4EF91A7AB6600086AD11 /* FISRequestQueue.h */,
 				72BD4EFA1A7AB6600086AD11 /* FISRequestQueue.m */,
 			);
@@ -366,6 +371,7 @@
 				72BD4EFB1A7AB6600086AD11 /* FISRequestQueue.m in Sources */,
 				722C53821A771EC30069A9D2 /* FISControlPanelViewController.m in Sources */,
 				722C53851A771F5E0069A9D2 /* FISControlPanelView.m in Sources */,
+				72BD4F021A7AE4C60086AD11 /* FISIngredient.m in Sources */,
 				72BD4EF41A7AB6160086AD11 /* FISAPIClient.m in Sources */,
 				7309CB8FD21B45F3B459A1F8 /* main.m in Sources */,
 			);
