@@ -25,7 +25,6 @@
     NSDictionary *views = @{@"nameField": self.nameField} ;
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[nameField]-|" options:0 metrics:nil views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-15-[nameField]-|" options:0 metrics:nil views:views]];
-    
 }
 
 - (UITextField *)nameField {

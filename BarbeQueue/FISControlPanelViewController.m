@@ -12,12 +12,10 @@
 #import "FISNewItemTableViewCell.h"
 
 @interface FISControlPanelViewController () <UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate, UITextFieldDelegate>
-
 @property (nonatomic) NSMutableArray *stuff;
 @property (nonatomic, strong) FISControlPanelView *view;
 @property (nonatomic) BOOL isAddingResource;
 @property (nonatomic) UIGestureRecognizer *tapGestureRecognizer;
-
 @end
 
 @implementation FISControlPanelViewController
@@ -57,18 +55,13 @@
     [self.view.tableView addGestureRecognizer:self.tapGestureRecognizer];
 }
 
-//- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
-//    [self.view.tableView addGestureRecognizer:self.tapGestureRecognizer];
-//    return YES;
-//}
-
 - (void)textFieldDidEndEditing:(UITextField *)textField {
     if ([textField.text isEqualToString:@""]) {
         [self.stuff removeObjectAtIndex:0];
         [self.view.tableView deleteRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationBottom];
     } else {
         [self.stuff replaceObjectAtIndex:0 withObject:textField.text];
-        [self.view.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationLeft];
+        [self.view.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationMiddle];
     }
     [self.view.tableView removeGestureRecognizer:self.tapGestureRecognizer];
 }
