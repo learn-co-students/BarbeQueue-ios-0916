@@ -12,4 +12,5 @@ target :unit_tests, :exclusive => true do
   pod 'Swizzlean'
   pod 'OHHTTPStubs'
   pod 'KIF'
+  pod 'Reachability'
 end

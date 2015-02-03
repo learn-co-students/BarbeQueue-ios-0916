@@ -48,6 +48,12 @@
 #define COCOAPODS_VERSION_MINOR_OHHTTPStubs_Core 1
 #define COCOAPODS_VERSION_PATCH_OHHTTPStubs_Core 7
 
+// Reachability
+#define COCOAPODS_POD_AVAILABLE_Reachability
+#define COCOAPODS_VERSION_MAJOR_Reachability 3
+#define COCOAPODS_VERSION_MINOR_Reachability 2
+#define COCOAPODS_VERSION_PATCH_Reachability 0
+
 // Specta
 #define COCOAPODS_POD_AVAILABLE_Specta
 // This library does not follow semantic-versioning,
