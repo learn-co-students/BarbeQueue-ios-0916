@@ -2,6 +2,8 @@
 #
 source 'https://github.com/CocoaPods/Specs.git'
 
+pod 'Reachability'
+pod 'OHHTTPStubs'
 # Add Application pods here
 
 target :unit_tests, :exclusive => true do
@@ -10,7 +12,5 @@ target :unit_tests, :exclusive => true do
   pod 'Expecta'
   pod 'OCMockito'
   pod 'Swizzlean'
-  pod 'OHHTTPStubs'
   pod 'KIF'
-  pod 'Reachability'
 end
