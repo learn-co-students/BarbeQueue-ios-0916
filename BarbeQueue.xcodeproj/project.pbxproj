@@ -135,16 +135,21 @@
 		72BD4EF51A7AB61A0086AD11 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				72BD4F001A7AE4C60086AD11 /* FISIngredient.h */,
+				72BD4F011A7AE4C60086AD11 /* FISIngredient.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		72F061451A83D58000C7B73B /* Storage */ = {
+			isa = PBXGroup;
+			children = (
 				72BD4F031A7AE5B20086AD11 /* FISIngredientStore.h */,
 				72BD4F041A7AE5B20086AD11 /* FISIngredientStore.m */,
 				72BD4EF21A7AB6160086AD11 /* FISAPIClient.h */,
 				72BD4EF31A7AB6160086AD11 /* FISAPIClient.m */,
-				72BD4F001A7AE4C60086AD11 /* FISIngredient.h */,
-				72BD4F011A7AE4C60086AD11 /* FISIngredient.m */,
-				72BD4EF91A7AB6600086AD11 /* FISRequestQueue.h */,
-				72BD4EFA1A7AB6600086AD11 /* FISRequestQueue.m */,
 			);
-			name = Models;
+			name = Storage;
 			sourceTree = "<group>";
 		};
 		731EB154B7F44FF3819AE629 /* UnitTests */ = {
@@ -187,6 +192,9 @@
 			children = (
 				BF9F87A08BB74F10AA17F5ED /* FISAppDelegate.h */,
 				F1FAEB7E0AF24740AADAECB9 /* FISAppDelegate.m */,
+				72BD4EF91A7AB6600086AD11 /* FISRequestQueue.h */,
+				72BD4EFA1A7AB6600086AD11 /* FISRequestQueue.m */,
+				72F061451A83D58000C7B73B /* Storage */,
 				72BD4EF51A7AB61A0086AD11 /* Models */,
 				72BD4EEF1A7AB4D70086AD11 /* Controllers */,
 				72BD4EEE1A7AB4B50086AD11 /* Views */,

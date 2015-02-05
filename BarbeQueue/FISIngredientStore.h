@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FISIngredientStore : NSObject
+@class FISIngredient;
+@protocol FISIngredientStoreDelegate <NSObject>
+- (void)ingredientListUpdated;
+@end
 
+@interface FISIngredientStore : NSObject
+@property(nonatomic, readonly) NSArray *ingredientList;
+@property(weak, nonatomic) id <FISIngredientStoreDelegate> delegate;
++ (instancetype)sharedStore;
+- (void)addIngredient:(FISIngredient *)ingredient;
+- (void)refreshIngredientList;
 @end
