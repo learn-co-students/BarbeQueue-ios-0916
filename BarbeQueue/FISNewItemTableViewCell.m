@@ -21,10 +21,10 @@
 }
 
 - (void)setupViews {
-    self.translatesAutoresizingMaskIntoConstraints = NO;
+//    self.contentView.translatesAutoresizingMaskIntoConstraints = NO;
     NSDictionary *views = @{@"nameField": self.nameField} ;
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[nameField]-|" options:0 metrics:nil views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-15-[nameField]-|" options:0 metrics:nil views:views]];
+    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[nameField]-|" options:0 metrics:nil views:views]];
+    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[nameField]-|" options:0 metrics:nil views:views]];
 }
 
 - (UITextField *)nameField {
