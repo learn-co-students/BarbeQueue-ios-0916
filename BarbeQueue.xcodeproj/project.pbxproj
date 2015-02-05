@@ -13,10 +13,8 @@
 		722C53821A771EC30069A9D2 /* FISControlPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722C53811A771EC30069A9D2 /* FISControlPanelViewController.m */; };
 		722C53851A771F5E0069A9D2 /* FISControlPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 722C53841A771F5E0069A9D2 /* FISControlPanelView.m */; };
 		72BD4EE31A7846440086AD11 /* FISNewItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BD4EE21A7846440086AD11 /* FISNewItemTableViewCell.m */; };
-		72BD4EF11A7AB53F0086AD11 /* IntegrationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BD4EF01A7AB53F0086AD11 /* IntegrationSpec.m */; };
 		72BD4EF41A7AB6160086AD11 /* FISAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BD4EF31A7AB6160086AD11 /* FISAPIClient.m */; };
 		72BD4EFB1A7AB6600086AD11 /* FISRequestQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BD4EFA1A7AB6600086AD11 /* FISRequestQueue.m */; };
-		72BD4EFD1A7AB67D0086AD11 /* FISAPIClientSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BD4EFC1A7AB67D0086AD11 /* FISAPIClientSpec.m */; };
 		72BD4EFF1A7AB68E0086AD11 /* FISRequestQueueSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BD4EFE1A7AB68E0086AD11 /* FISRequestQueueSpec.m */; };
 		72BD4F021A7AE4C60086AD11 /* FISIngredient.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BD4F011A7AE4C60086AD11 /* FISIngredient.m */; };
 		72BD4F051A7AE5B20086AD11 /* FISIngredientStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BD4F041A7AE5B20086AD11 /* FISIngredientStore.m */; };
@@ -49,12 +47,10 @@
 		722C53841A771F5E0069A9D2 /* FISControlPanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISControlPanelView.m; sourceTree = "<group>"; };
 		72BD4EE11A7846440086AD11 /* FISNewItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISNewItemTableViewCell.h; sourceTree = "<group>"; };
 		72BD4EE21A7846440086AD11 /* FISNewItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISNewItemTableViewCell.m; sourceTree = "<group>"; };
-		72BD4EF01A7AB53F0086AD11 /* IntegrationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntegrationSpec.m; sourceTree = "<group>"; };
 		72BD4EF21A7AB6160086AD11 /* FISAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISAPIClient.h; sourceTree = "<group>"; };
 		72BD4EF31A7AB6160086AD11 /* FISAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISAPIClient.m; sourceTree = "<group>"; };
 		72BD4EF91A7AB6600086AD11 /* FISRequestQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISRequestQueue.h; sourceTree = "<group>"; };
 		72BD4EFA1A7AB6600086AD11 /* FISRequestQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISRequestQueue.m; sourceTree = "<group>"; };
-		72BD4EFC1A7AB67D0086AD11 /* FISAPIClientSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISAPIClientSpec.m; sourceTree = "<group>"; };
 		72BD4EFE1A7AB68E0086AD11 /* FISRequestQueueSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISRequestQueueSpec.m; sourceTree = "<group>"; };
 		72BD4F001A7AE4C60086AD11 /* FISIngredient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISIngredient.h; sourceTree = "<group>"; };
 		72BD4F011A7AE4C60086AD11 /* FISIngredient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISIngredient.m; sourceTree = "<group>"; };
@@ -241,8 +237,6 @@
 		C9BB1EE778F44B41B7A3EC4F /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				72BD4EF01A7AB53F0086AD11 /* IntegrationSpec.m */,
-				72BD4EFC1A7AB67D0086AD11 /* FISAPIClientSpec.m */,
 				72BD4EFE1A7AB68E0086AD11 /* FISRequestQueueSpec.m */,
 			);
 			path = Tests;
@@ -435,8 +429,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72BD4EF11A7AB53F0086AD11 /* IntegrationSpec.m in Sources */,
-				72BD4EFD1A7AB67D0086AD11 /* FISAPIClientSpec.m in Sources */,
 				72BD4EFF1A7AB68E0086AD11 /* FISRequestQueueSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
