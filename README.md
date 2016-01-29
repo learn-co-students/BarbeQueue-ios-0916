@@ -40,4 +40,4 @@ Once you're done, run (don't test) the project. You should be able to add ingred
 
 You should see that the ingredients you added before turning on the Network Link Conditioner should say `Pending Write: NO`, and the ones added after will say `Pending Write: YES`. These ingredients are telling you that they have not successfully hit the server. Turn off the Network Link Conditioner and hit the refresh button on the left side of the nav bar. All the ingredients that said `Pending Write: NO` should now say `Pending Write: YES`. Even more awesome, if you check out the logs in the console you'll see that the ingredients are getting sent to the server in the order you added them, all thanks to the queue you built!
 
-<a href='https://learn.co/lessons/BarbeQueue' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/BarbeQueue' title='BarbeQueue'>BarbeQueue</a> on Learn.co and start learning to code for free.</p>
